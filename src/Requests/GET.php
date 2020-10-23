@@ -22,7 +22,7 @@ class GET {
         ]);
         try {
             $lookup = $request->request("GET", $path, [
-                "proxy" => Config::Proxy,
+                //"proxy" => Config::Proxy,
                 "verify" => false,
                 "allow_redirects" => false
             ]);
