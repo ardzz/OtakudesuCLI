@@ -28,14 +28,14 @@ class OtakudesuCLI extends CLI{
      */
     protected function setup(Options $options) : void {
         $options->setHelp("This is a simple example, not using any subcommands");
-        $options->registerOption("install", "Install OtakudesuCLI ke sistem", "i");
+        $options->registerOption("install", "Install OtakudesuCLI ke sistem", "p");
         $options->registerOption("uninstall", "Unstall OtakudesuCLI dari sistem", "u");
-        $options->registerOption("anime-list", "Lihat daftar anime yang tersedia di Otakudesu", "al");
-        $options->registerOption("complete-anime", "Lihat daftar anime (lengkap)", "ca");
-        $options->registerOption("ongoing-anime", "Lihat daftar anime (ongoing)", "oa");
-        $options->registerOption("genre-list", "Lihat daftar genre anime", "gl");
+        $options->registerOption("anime-list", "Lihat daftar anime yang tersedia di Otakudesu", "l");
+        $options->registerOption("complete-anime", "Lihat daftar anime (lengkap)", "c");
+        $options->registerOption("ongoing-anime", "Lihat daftar anime (ongoing)", "o");
+        $options->registerOption("genre-list", "Lihat daftar genre anime", "g");
         $options->registerOption("cari-anime", "Cari anime", "s", "nama_anime");
-        $options->registerOption("info-anime", "Cari informasi anime, contohnya : ogairu-season-3-sub-indo", "id", "id_anime");
+        $options->registerOption("info-anime", "Cari informasi anime, contohnya : ogairu-season-3-sub-indo", "i", "id_anime");
         $options->registerArgument("argument", "Arguments can be required or optional. This one is optional", false);
         $options->registerOption("version", "Print current version", 'v');
     }
