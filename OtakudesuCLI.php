@@ -27,7 +27,7 @@ class OtakudesuCLI extends CLI{
      * @return void
      */
     protected function setup(Options $options) : void {
-        $options->setHelp("This is a simple example, not using any subcommands");
+        $options->setHelp("Unofficial Otakudesu Client (CLI based) mempermudah kepentingan nge-weaabo di semua OS!");
         $options->registerOption("install", "Install OtakudesuCLI ke sistem", "p");
         $options->registerOption("uninstall", "Unstall OtakudesuCLI dari sistem", "u");
         $options->registerOption("anime-list", "Lihat daftar anime yang tersedia di Otakudesu", "l");
