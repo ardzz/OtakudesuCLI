@@ -7,6 +7,7 @@ Unofficial Otakudesu Client (_CLI based_) mempermudah kepentingan nge-_weaaboo_ 
 ![](https://img.shields.io/badge/PHP-7.4.*-yellow?style=flat-square)
 
 <a href="https://trakteer.id/ardhan" target="_blank">Donasi di Trakteer.id</a>
+[Donasi di Trakteer.id](https://trakteer.id/ardhan){target="_blank"}
 
 ![Screenshot](screenshots/Screenshot_2020-10-23_14-27-17.png)
 
