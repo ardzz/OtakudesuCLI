@@ -26,4 +26,12 @@ php composer.phar install
 
 # Jalankan OtakudesuCLI
 php OtakudesuCLI.php
+
+# Install OTakudesuCLI ke sistem (OPSIONAL)
+sudo php OtakudesuCLI.php --install
 ```
+#### Screenshot Instalasi
+* Install semua dependencies
+![Screenshot](screenshots/Screenshot_2020-10-23_22-30-48.png)
+* Install OtakudesuCLI ke sistem
+![Screenshot](screenshots/Screenshot_2020-10-23_22-37-32.png)
