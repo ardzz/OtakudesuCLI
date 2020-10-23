@@ -1,0 +1,20 @@
+{
+    "name": "ardzz/otakudesu",
+    "authors": [
+        {
+            "name": "Ardan",
+            "email": "ardzz@indoxploit.or.id"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.0",
+        "voku/simple_html_dom": "^4.7",
+        "jc21/clitable": "^1.2",
+        "splitbrain/php-cli": "^1.1"
+    },
+    "autoload": {
+        "psr-4":{
+            "Otakudesu\\": "src/"
+        }
+    }
+}
