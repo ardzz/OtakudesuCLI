@@ -1,5 +1,5 @@
 # OtakudesuCLI
-Unofficial Otakudesu Client (_CLI based_) mempermudah kepentingan nge-_weaabo_ di semua OS!
+Unofficial Otakudesu Client (_CLI based_) mempermudah kepentingan nge-_weaaboo_ di semua OS!
 
 ![](https://img.shields.io/github/stars/ardzz/OtakudesuCLI.svg?style=flat-square)
 ![](https://img.shields.io/github/forks/ardzz/OtakudesuCLI.svg?style=flat-square)
