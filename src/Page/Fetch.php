@@ -20,6 +20,10 @@ class Fetch{
         return posix_getuid() == 0;
     }
 
+    function checkOS() {
+        return strtoupper(substr(PHP_OS, 0, 3)) === 'WIN' ? "windows" : "linux";
+    }
+
     function getString($str, $find_start, $find_end) {
 		$start = @strpos($str, $find_start);
 		if (!$start) {

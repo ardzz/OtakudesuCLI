@@ -53,6 +53,10 @@ class OtakudesuCLI extends CLI{
         $Otakudesu = new otakudesu;
 
         if ($options->getOpt("install")) {
+            if($Otakudesu->checkOS() === "windows") {
+                $this->info("Maaf, tidak bisa menggunakan fitur ini di windows.");
+                die;
+            }
             if ($Otakudesu->isRoot()) {
                 $this->info("Membuat pintasan ke /usr/bin/otakudesu");
                 $target = "/usr/bin/otakudesu";
@@ -73,6 +77,10 @@ class OtakudesuCLI extends CLI{
             }    
         }
         elseif ($options->getOpt("uninstall")) {
+            if($Otakudesu->checkOS() === "windows") {
+                $this->info("Maaf, tidak bisa menggunakan fitur ini di windows.");
+                die;
+            }
             if ($Otakudesu->isRoot()) {
                 $this->info("Menghapus pintasan ke /usr/bin/otakudesu");
                 $target = "/usr/bin/otakudesu";
