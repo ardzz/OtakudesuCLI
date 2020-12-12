@@ -233,16 +233,16 @@ class Fetch{
         $output  = [];
         $X       = 0;
 
-        foreach ($dom->find("div.wowmaskot div[id=venkonten] div.vezone div.venser") as $key => $value) {
+        foreach ($dom->find("div.wowmaskot div[id=venkonten] div.venser") as $key => $value) {
             foreach ($value->find("div.jdlrx") as $key_jdlrx => $value_jdlrx) {
                 $output["title"] = html_entity_decode($value_jdlrx->plaintext);
             }
-            foreach ($value->find("div.imganime") as $key_imganime => $value_imganime) {
+            foreach ($value->find("div.animeinfo div.kanan div.imganime div.separator") as $key_imganime => $value_imganime) {
                 foreach ($value_imganime->find("img") as $key_img => $value_img) {
                     $output["thumbnail"] = $value_img->src;
                 }
             }
-            foreach ($value->find("div.infos") as $key_infos => $value_infos) {
+            foreach ($value->find("div.animeinfo div.kiri div.data div.infos") as $key_infos => $value_infos) {
                 $temp = $value_infos->outertext;
                 $temp = str_replace("</b>", "", $temp);
                 $temp = str_replace("<br>", "</b>", $temp);
@@ -253,14 +253,8 @@ class Fetch{
                     $output["anime_info"][strtolower($info[0])] = $info[1];
                 }
             }
-            $sinopsis = [];
-            foreach ($value->find("div.deskripsi div div p") as $key_deskripsi => $value_deskripsi) {
-                $sinopsis[] = $value_deskripsi->plaintext;
-            }
-            $output["sinopsis"] = $sinopsis;
-
             $download = [];
-            foreach ($value->find("div.download") as $key_download => $value_download) {
+            foreach ($dom->find("div.wowmaskot div[id=venkonten] div.download") as $key_download => $value_download) {
                 $download[] = $value_download;
             }
             $episode = 0;
